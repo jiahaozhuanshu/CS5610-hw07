@@ -1,0 +1,16 @@
+[Unit]
+Description=Timesheetsspa App Sharing
+
+[Service]
+Type=simple
+User=timesheetsspa
+Group=timesheetsspa
+Restart=on-failure
+Environment=MIX_ENV=prod "PORT=5001"
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/timesheetsspa/CS5610-hw07
+ExecStart=/bin/bash /home/timesheetsspa/CS5610-hw07/start.sh
+
+[Install]
+WantedBy=multi-user.target
