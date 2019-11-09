@@ -3,10 +3,8 @@ defmodule Timesheetsspa.Repo.Migrations.CreateUsers do
 
   def change do
     create table(:users) do
-      add :email, :string
       add :name, :string
-      add :password_hash, :string
-      add :is_manager, :boolean, default: false, null: false
+      add :email, :string
 
       timestamps()
     end

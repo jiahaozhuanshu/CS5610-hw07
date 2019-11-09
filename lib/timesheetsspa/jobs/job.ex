@@ -7,6 +7,8 @@ defmodule Timesheetsspa.Jobs.Job do
     field :hours, :integer
     field :jobcode, :string
     field :name, :string
+    belongs_to :user, Timesheetsspa.Users.User
+    has_many :tasks, Timesheetsspa.Tasks.Task
 
     timestamps()
   end

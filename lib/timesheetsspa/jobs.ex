@@ -36,7 +36,11 @@ defmodule Timesheetsspa.Jobs do
 
   """
   def get_job!(id), do: Repo.get!(Job, id)
+  
 
+  def get_job_by_job_code(jobcode) do
+    Repo.get_by(Job, jobcode: jobcode)
+  end
   @doc """
   Creates a job.
 

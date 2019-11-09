@@ -7,9 +7,11 @@ defmodule Timesheetsspa.Repo.Migrations.CreateJobs do
       add :hours, :integer
       add :jobcode, :string
       add :name, :string
+      add :user_id, references(:users, on_delete: :nothing)
 
       timestamps()
     end
 
+    create index(:jobs, [:user_id])
   end
 end

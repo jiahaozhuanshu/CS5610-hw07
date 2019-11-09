@@ -13,8 +13,8 @@ defmodule Timesheetsspa.Users.User do
     field :password_confirmation, :string, virtual: true
     field :manager_email, :string
 
-    has_many :sheets, Timesheets.Sheets.Sheet
-    has_many :jobs, Timesheets.Jobs.Job
+    has_many :sheets, Timesheetsspa.Sheets.Sheet
+    has_many :jobs, Timesheetsspa.Jobs.Job
 
     timestamps()
   end
