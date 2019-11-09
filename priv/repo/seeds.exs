@@ -14,8 +14,8 @@
 alias Timesheetsspa.Repo
 alias Timesheetsspa.Users.User
 
-pwhash = Argon2.hash_pwd_salt("password123456")
+pwhash = Argon2.hash_pwd_salt("123456789012")
 
-Repo.insert!(%User{name: "manager2", email: "manager2@test.com", is_manager: true, password_hash: pwhash})
-Repo.insert!(%User{name: "worker2", email: "worker2@test.com", is_manager: false, manager_email: "manager1@test.com", password_hash: pwhash})
+Repo.insert!(%User{name: "m1", email: "m1test", is_manager: true, password_hash: pwhash})
+Repo.insert!(%User{name: "w1", email: "w1test", is_manager: false, manager_email: "m1.com", password_hash: pwhash})
 
