@@ -1,0 +1,38 @@
+
+Web Dev Fall 2019 HW07 Status
+
+Answer the following questions:
+
+
+1. What's your name?
+Jiahao Song
+
+
+2. What's the URL of the github repo with your work for this HW?
+https://github.com/jiahaozhuanshu/CS5610-hw07.git
+
+
+3. What's the version number of your github release?
+No release
+
+
+4. What's the URL that you deployed to?
+http://time2.jiahaosong1020.shop
+
+
+5. Is your app functionality complete? If not, what's missing?
+Not really. I can log in and write date and description, but cant save timesheets.
+Didn't distinguish between manager and worker
+
+
+6. Is your app properly deployed? If not, what went wrong?
+Yes.
+
+
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Development
+ - Deployment
+ - Submission
